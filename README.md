@@ -1,6 +1,6 @@
 # Product Management App
 
-Hey! This is my solutאion for the assignment. It's a simple product management system where you can add, edit and search products.
+Hey! This is my solution for the assignment. It's a simple product management system where you can add, edit and search products.
 
 ## What it does
 
@@ -28,6 +28,10 @@ cd ProductManagement.API
 dotnet run
 ```
 The API will be at `http://localhost:5171`
+
+You can test the API using:
+- Swagger UI at `http://localhost:5171/swagger`
+- Postman collection in `ProductManagement.postman_collection.json`
 
 3. Run the frontend:
 ```bash
