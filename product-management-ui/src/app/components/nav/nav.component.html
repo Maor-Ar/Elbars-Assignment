@@ -1,0 +1,13 @@
+<mat-toolbar class="nav-toolbar">
+  <a routerLink="/products" class="brand">
+    <mat-icon>inventory_2</mat-icon>
+    Product Management
+  </a>
+  <span class="spacer"></span>
+  <div class="user-info">
+    <span class="username">{{ username }}</span>
+    <button mat-icon-button (click)="onLogout()" matTooltip="Logout">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>

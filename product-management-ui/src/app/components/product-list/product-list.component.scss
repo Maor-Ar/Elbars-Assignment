@@ -1,0 +1,126 @@
+.product-list-container {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      button {
+        mat-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .search-box {
+      margin-top: 16px;
+      margin-bottom: 24px;
+
+      .mat-mdc-form-field {
+        width: 100%;
+      }
+    }
+
+    .filters {
+      display: flex;
+      gap: 16px;
+      margin-bottom: 20px;
+      align-items: center;
+      flex-wrap: wrap;
+
+      mat-form-field {
+        flex: 1;
+        min-width: 200px;
+      }
+
+      button {
+        height: 56px;
+        mat-icon {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .table-container {
+      margin-bottom: 24px;
+      overflow-x: auto;
+
+      table {
+        width: 100%;
+
+        th {
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.87);
+          cursor: pointer;
+          user-select: none;
+          white-space: nowrap;
+
+          .mat-icon {
+            font-size: 18px;
+            height: 18px;
+            width: 18px;
+            margin-left: 4px;
+            vertical-align: middle;
+          }
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.04);
+          }
+        }
+
+        td {
+          color: rgba(0, 0, 0, 0.87);
+        }
+
+        .mat-column-actions {
+          width: 120px;
+          text-align: right;
+          white-space: nowrap;
+
+          button {
+            .mat-icon {
+              font-size: 20px;
+              height: 20px;
+              width: 20px;
+            }
+          }
+        }
+
+        .mat-column-price {
+          width: 120px;
+        }
+
+        .mat-column-unitsInStock {
+          width: 120px;
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      margin-top: 16px;
+
+      button {
+        min-width: 40px;
+        padding: 0 8px;
+
+        .mat-icon {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
